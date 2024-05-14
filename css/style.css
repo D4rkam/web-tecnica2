@@ -1,3 +1,7 @@
+h1, h2, h5{
+    font-family: 'Arvo' serif;
+}
+
 .navbar{
     padding-left: 50px;
     padding-right: 50px;
@@ -35,8 +39,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100vw; 
-    height: 60vh;
+    width: 99vw; 
+    height: 85vh;
     display: flex;
     align-items: center;
     position: relative;
@@ -67,6 +71,11 @@
     padding-bottom: 2%;
     font-size: 3em; /* Tamaño del texto */
 }
+
+.gretting-section{
+    padding-top: 80px;
+}
+
 .intro-info{
     font-size: 20px;
     font-weight: 400;
