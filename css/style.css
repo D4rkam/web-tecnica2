@@ -65,17 +65,6 @@
     align-items: center;
     position: relative;
     z-index: 1;
-.principal-img {
-  background-image: url("../img/principal.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 99vw;
-  height: 85vh;
-  display: flex;
-  align-items: center;
-  position: relative;
-  z-index: 1;
 }
 .principal-img::before {
   content: ""; /* Obligatorio para que el pseudo-elemento sea visible */
@@ -110,9 +99,6 @@
 .intro-info{
     font-size: 20px;
     font-weight: 400;
-.intro-info {
-  font-size: 20px;
-  font-weight: 400;
 }
 
 .imagenes {
