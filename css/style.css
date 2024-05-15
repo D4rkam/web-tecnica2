@@ -55,7 +55,7 @@
   margin-top: 0;
 }
 .principal-img{
-    background-image: url('../img/principal.jpg'); 
+    background-image: url('../img/EscribirCompu.jpg'); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -84,6 +84,7 @@
   padding-left: 10%; /* Añadir espacio superior para el texto */
   font-size: 3.5em; /* Tamaño del texto */
 }
+
 
 .titulos {
   margin-top: 0; /* Eliminar el margen superior predeterminado del h1 */
