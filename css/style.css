@@ -2,25 +2,25 @@
     font-family: "Arvo", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
   
-  .arvo-bold {
+.arvo-bold {
     font-family: "Arvo", serif;
     font-weight: 500;
     font-style: normal;
-  }
+}
   
-  .arvo-regular-italic {
+.arvo-regular-italic {
     font-family: "Arvo", serif;
     font-weight: 400;
     font-style: italic;
-  }
+}
   
-  .arvo-bold-italic {
+.arvo-bold-italic {
     font-family: "Arvo", serif;
     font-weight: 700;
     font-style: italic;
-  }
+}
 
 body{
     overflow-x: hidden;
@@ -82,10 +82,8 @@ body{
 .titulo-principal {
     position: relative;
     z-index: 1; /* Colocar el texto por encima del fondo oscuro */
-    color: white;
-    text-align: start; /* Alinear el texto al centro */
+    color: white;/* Alinear el texto al centro */
     margin-top: 0; /* Eliminar el margen superior predeterminado del h1 */
-    padding-left: 10%; /* Añadir espacio superior para el texto */
     font-size: 3.5em; /* Tamaño del texto */
 }
 
@@ -164,6 +162,10 @@ footer p{
 
 footer h5{
     font-size: 24px ;
+}
+
+time, i{
+    color: gray;
 }
 
 
