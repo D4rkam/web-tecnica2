@@ -55,7 +55,7 @@
   margin-top: 0;
 }
 .principal-img{
-    background-image: url('../img/EscribirCompu.jpg'); 
+    background-image: url('../img/principal.jpg'); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -65,6 +65,18 @@
     align-items: center;
     position: relative;
     z-index: 1;
+}
+.principal-img2{
+  background-image: url('../img/EscribirCompu.jpg'); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 99vw; 
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
 }
 .principal-img::before {
   content: ""; /* Obligatorio para que el pseudo-elemento sea visible */
@@ -168,4 +180,7 @@ footer h5 {
   font-size: 24px;
 }
 
-
+.cardP{
+  width: 300px;
+  height: 300px;
+}
