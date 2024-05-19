@@ -168,4 +168,28 @@ time, i{
     color: gray;
 }
 
+.campo-form{
+    height: 50px;
+    font-size: large;
+}
+
+/* SACARLE LAS FLECHAS AL INPUT DE TIPO NUMERO */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+/* ------------------------------------ */
+
+.btn-formulario{
+    width: 600px; 
+    height: 50px; 
+    font-size: 25px; 
+    background-color: #4169e1;
+}
+
 
