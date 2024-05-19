@@ -1,0 +1,13 @@
+ <div class="container">
+                <h4 style="margin-top: 40px;">Proyectos Realizados </h4>
+                <div class="row">
+                    <div class="col-sm-6" style="background-color:white;">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit doloribus vitae earum soluta blanditiis magni hic est atque harum, distinctio molestias quas cupiditate adipisci. Quo ipsa neque ducimus nobis quos!</p>
+                    </div>
+                    <div class="col-sm-6" style="background-color:white;">
+                        <img src="../img/referencia.jpg" alt="" style="height: 300px;">
+                    </div>
+                </div>
+            </div>
+
+Columnas boostrap gridbox
