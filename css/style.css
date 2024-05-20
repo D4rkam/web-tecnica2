@@ -77,7 +77,6 @@ body{
   margin-top: 0;
 }
 .principal-img{
-    background-image: url('../img/principal.jpg'); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -88,30 +87,6 @@ body{
     position: relative;
     z-index: 1;
 }
-.principal-img2{
-  background-image: url('../img/EscribirCompu.jpg'); 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 99vw; 
-  height: 85vh;
-  display: flex;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-}
-.principal-img3{
-  background-image: url('../img_Anuncios/Collage1.jpg'); 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 99vw; 
-  height: 85vh;
-  display: flex;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-}
 .principal-img::before {
   content: ""; /* Obligatorio para que el pseudo-elemento sea visible */
   position: absolute; /* Para superponer el pseudo-elemento al fondo */
@@ -119,7 +94,7 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Color negro con opacidad del 50% */
+  background-color: rgba(0, 0, 0, 0.6); /* Color negro con opacidad del 60% */
 }
 .titulo-principal {
     position: relative;
@@ -142,7 +117,7 @@ body{
 }
 
 .intro-info{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
 }
 
@@ -219,8 +194,13 @@ time, i{
 }
 
 .campo-form{
-    height: 50px;
     font-size: large;
+    background-color: #f8f9fa; /* Un color de fondo diferente del blanco */
+    border: 1px solid #ced4da; /* Un borde más oscuro para distinguir los inputs */
+    padding: 0.5rem 1rem; /* Ajusta el padding para mayor claridad */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: inset 0 1px 2px rgba(65, 105, 225, .1); /* Sutil sombra interna */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transiciones suaves para el foco */
 }
 
 /* SACARLE LAS FLECHAS AL INPUT DE TIPO NUMERO */
