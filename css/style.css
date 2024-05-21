@@ -1,27 +1,3 @@
-.arvo-regular {
-    font-family: "Arvo", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-  
-.arvo-bold {
-    font-family: "Arvo", serif;
-    font-weight: 500;
-    font-style: normal;
-}
-  
-.arvo-regular-italic {
-    font-family: "Arvo", serif;
-    font-weight: 400;
-    font-style: italic;
-}
-  
-.arvo-bold-italic {
-    font-family: "Arvo", serif;
-    font-weight: 700;
-    font-style: italic;
-}
-
 body{
     overflow-x: hidden;
 }
@@ -81,7 +57,7 @@ body{
     background-position: center;
     background-size: cover;
     width: 100vw; 
-    height: 88vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     position: relative;
@@ -99,9 +75,11 @@ body{
 .titulo-principal {
     position: relative;
     z-index: 1; /* Colocar el texto por encima del fondo oscuro */
-    color: white;/* Alinear el texto al centro */
+    color: white;
+    text-align: start; /* Alinear el texto al centro */
     margin-top: 0; /* Eliminar el margen superior predeterminado del h1 */
-    font-size: 3.5em; /* Tamaño del texto */
+    padding-left: 10%; /* Añadir espacio superior para el texto */
+    font-size: 3em; /* Tamaño del texto */
 }
 
 
@@ -111,11 +89,6 @@ body{
   padding-bottom: 2%;
   font-size: 3em; /* Tamaño del texto */
 }
-
-.gretting-section{
-    padding-top: 80px;
-}
-
 .intro-info{
     font-size: 1.25rem;
     font-weight: 400;
@@ -124,11 +97,12 @@ body{
 .imagenes {
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
 }
 
 .imagen-container {
     position: relative;
-    width: 32%;
+    /* width: 30%; Tamaño del contenedor de la imagen */
     overflow: hidden;
     cursor: pointer;
     border-radius: 20px;
@@ -136,7 +110,7 @@ body{
 
 .imagen-container img {
     width: 100%;
-    height: 300px;
+    height: auto;
     transition: transform 0.5s ease; /* Transición suave para el filtro de la imagen */
 }
 
@@ -179,10 +153,6 @@ body{
 
 footer {
   padding-top: 80px;
-}
-
-footer p{
-    margin-bottom: 3rem;
 }
 
 footer h5{
