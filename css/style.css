@@ -1,45 +1,34 @@
-.arvo-regular {
-    font-family: "Arvo", serif;
-    font-weight: 400;
-    font-style: normal;
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica'), url('../font/Helvetica.woff') format('woff');
 }
-  
-.arvo-bold {
-    font-family: "Arvo", serif;
-    font-weight: 500;
-    font-style: normal;
-}
-  
-.arvo-regular-italic {
-    font-family: "Arvo", serif;
-    font-weight: 400;
-    font-style: italic;
-}
-  
-.arvo-bold-italic {
-    font-family: "Arvo", serif;
-    font-weight: 700;
-    font-style: italic;
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica'), url('../font/Helvetica-Bold.woff') format('woff');
 }
 
 body{
     overflow-x: hidden;
 }
 
-.arvo-bold {
-  font-family: "Arvo", serif;
+.helve-bold {
+  font-family: "Helvetica", serif;
   font-weight: 500;
   font-style: normal;
 }
 
-.arvo-regular-italic {
-  font-family: "Arvo", serif;
+.helve-regular-italic {
+  font-family: "Helvetica", serif;
   font-weight: 400;
   font-style: italic;
 }
 
-.arvo-bold-italic {
-  font-family: "Arvo", serif;
+.helve-bold-italic {
+  font-family: "Helvetica", serif;
   font-weight: 700;
   font-style: italic;
 }
@@ -80,7 +69,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100vw; 
+    width: 100%; 
     height: 88vh;
     display: flex;
     align-items: center;
@@ -136,7 +125,8 @@ body{
 
 .imagen-container img {
     width: 100%;
-    height: 300px;
+    background-size: cover;
+    height: 280px;
     transition: transform 0.5s ease; /* Transición suave para el filtro de la imagen */
 }
 
