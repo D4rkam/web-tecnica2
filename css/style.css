@@ -1,37 +1,58 @@
-.navbar{
-    padding-left: 50px;
-    padding-right: 50px;
+body{
+    overflow-x: hidden;
 }
 
-.nav-link{
-    font-size: 18px;
-    font-weight: 500;
+.arvo-bold {
+  font-family: "Arvo", serif;
+  font-weight: 500;
+  font-style: normal;
 }
-.nav-link.active{
-    color: #4169e1 !important;
-    outline: none !important;
+
+.arvo-regular-italic {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: italic;
 }
-.nav-item{
-    padding-right: 20px;
+
+.arvo-bold-italic {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: italic;
 }
-.nav-item :hover{
-    text-decoration-color: #4169e1;
-    color: #4169e1;
+
+.navbar {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 500;
+}
+.nav-link.active {
+  color: #4169e1 !important;
+  outline: none !important;
+}
+.nav-item {
+  padding-right: 20px;
+}
+.nav-item :hover {
+  text-decoration-color: #4169e1;
+  color: #4169e1;
 }
 .navbar-nav .nav-link.dropdown-toggle {
-    width: auto;
-    padding-right: 1rem; /* Ajusta el espaciado derecho según sea necesario */
+  width: auto;
+  padding-right: 1rem; /* Ajusta el espaciado derecho según sea necesario */
 }
 /* Para asegurar que el dropdown tenga el mismo tamaño que el enlace */
 .dropdown-menu {
-    min-width: calc(100% - 2rem); /* Ajusta el valor según sea necesario */
+  min-width: calc(100% - 2rem); /* Ajusta el valor según sea necesario */
 }
 .navbar-nav .dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0;
+  display: block;
+  margin-top: 0;
 }
 .principal-img{
-    background-image: url('../img/principal.jpg'); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -43,13 +64,13 @@
     z-index: 1;
 }
 .principal-img::before {
-    content: ''; /* Obligatorio para que el pseudo-elemento sea visible */
-    position: absolute; /* Para superponer el pseudo-elemento al fondo */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Color negro con opacidad del 50% */
+  content: ""; /* Obligatorio para que el pseudo-elemento sea visible */
+  position: absolute; /* Para superponer el pseudo-elemento al fondo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Color negro con opacidad del 60% */
 }
 .titulo-principal {
     position: relative;
@@ -61,14 +82,15 @@
     font-size: 3em; /* Tamaño del texto */
 }
 
+
 .titulos {
-    margin-top: 0; /* Eliminar el margen superior predeterminado del h1 */
-    padding-top: 4%; /* Añadir espacio superior para el texto */
-    padding-bottom: 2%;
-    font-size: 3em; /* Tamaño del texto */
+  margin-top: 0; /* Eliminar el margen superior predeterminado del h1 */
+  padding-top: 4%; /* Añadir espacio superior para el texto */
+  padding-bottom: 2%;
+  font-size: 3em; /* Tamaño del texto */
 }
 .intro-info{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
 }
 
@@ -93,40 +115,88 @@
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Superposición oscura con transparencia */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0; /* Inicialmente oculto */
-    transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Superposición oscura con transparencia */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.3s ease; /* Transición suave para la opacidad */
 }
 
 .overlay-text {
-    color: white;
-    font-size: 25px;
-    font-weight: 500;
-    text-align: center;
-    margin: 0;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
 }
 
 .imagen-container:hover .overlay {
-    opacity: 1; /* Mostrar superposición cuando se pasa el mouse sobre el contenedor de la imagen */
+  opacity: 1; /* Mostrar superposición cuando se pasa el mouse sobre el contenedor de la imagen */
 }
 
 .imagen-container:hover img {
-    transform: scale(1.1); /* Hacer un pequeño zoom en la imagen al pasar el mouse sobre ella */
+  transform: scale(
+    1.1
+  ); /* Hacer un pequeño zoom en la imagen al pasar el mouse sobre ella */
 }
 
-footer{
-    padding-top: 80px
+footer {
+  padding-top: 80px;
 }
 
 footer h5{
     font-size: 24px ;
 }
 
+time, i{
+    color: gray;
+}
+
+.campo-form{
+    font-size: large;
+    background-color: #f8f9fa; /* Un color de fondo diferente del blanco */
+    border: 1px solid #ced4da; /* Un borde más oscuro para distinguir los inputs */
+    padding: 0.5rem 1rem; /* Ajusta el padding para mayor claridad */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: inset 0 1px 2px rgba(65, 105, 225, .1); /* Sutil sombra interna */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transiciones suaves para el foco */
+}
+
+/* SACARLE LAS FLECHAS AL INPUT DE TIPO NUMERO */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+/* ------------------------------------ */
+
+.btn-formulario{
+    width: 600px; 
+    height: 50px; 
+    font-size: 25px; 
+    background-color: #4169e1;
+}
+
+footer h5 {
+  font-size: 24px;
+}
+
+.cardP{
+  width: 300px;
+  height: 300px;
+}
