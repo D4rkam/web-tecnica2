@@ -106,7 +106,7 @@
   text-align: start; /* Alinear el texto al centro */
   margin-top: 0; /* Eliminar el margen superior predeterminado del h1 */
   padding-left: 10%; /* Añadir espacio superior para el texto */
-  font-size: 3.5em; /* Tamaño del texto */
+  font-size: 4.9em; /* Tamaño del texto */
 }
 
 
@@ -190,9 +190,4 @@ footer {
 
 footer h5 {
   font-size: 24px;
-}
-
-.cardP{
-  width: 300px;
-  height: 300px;
 }
