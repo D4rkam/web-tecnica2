@@ -1,7 +1,29 @@
 .arvo-regular {
-  font-family: "Arvo", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.arvo-bold {
+    font-family: "Arvo", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.arvo-regular-italic {
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+.arvo-bold-italic {
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 .arvo-bold {
@@ -59,8 +81,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 99vw; 
-    height: 85vh;
+    width: 100vw; 
+    height: 88vh;
     display: flex;
     align-items: center;
     position: relative;
@@ -100,6 +122,11 @@
   background-color: rgba(0, 0, 0, 0.5); /* Color negro con opacidad del 50% */
 }
 .titulo-principal {
+    position: relative;
+    z-index: 1; /* Colocar el texto por encima del fondo oscuro */
+    color: white;/* Alinear el texto al centro */
+    margin-top: 0; /* Eliminar el margen superior predeterminado del h1 */
+    font-size: 3.5em; /* Tamaño del texto */
   position: relative;
   z-index: 1; /* Colocar el texto por encima del fondo oscuro */
   color: white;
@@ -127,24 +154,22 @@
 }
 
 .imagenes {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .imagen-container {
-  position: relative;
-  /* width: 30%; Tamaño del contenedor de la imagen */
-  overflow: hidden;
-  cursor: pointer;
-  border-radius: 10px;
+    position: relative;
+    width: 32%;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
 }
 
 .imagen-container img {
-  width: 100%;
-  height: 370px;
-  background-size: auto;
-  transition: transform 0.5s ease; /* Transición suave para el filtro de la imagen */
+    width: 100%;
+    height: 300px;
+    transition: transform 0.5s ease; /* Transición suave para el filtro de la imagen */
 }
 
 .overlay {
@@ -186,6 +211,42 @@
 
 footer {
   padding-top: 80px;
+}
+
+footer p{
+    margin-bottom: 3rem;
+}
+
+footer h5{
+    font-size: 24px ;
+}
+
+time, i{
+    color: gray;
+}
+
+.campo-form{
+    height: 50px;
+    font-size: large;
+}
+
+/* SACARLE LAS FLECHAS AL INPUT DE TIPO NUMERO */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+/* ------------------------------------ */
+
+.btn-formulario{
+    width: 600px; 
+    height: 50px; 
+    font-size: 25px; 
+    background-color: #4169e1;
 }
 
 footer h5 {
