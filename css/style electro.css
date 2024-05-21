@@ -1,0 +1,33 @@
+.container-electro {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    object-fit: cover;
+    position: relative;
+}
+.imagenelectro {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imagenelectro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen ocupe todo el contenedor */
+}
+
+.text-imagen {
+    position: absolute;
+    top: 50%;
+    left: 10%; /* Posición a la izquierda del contenedor */
+    transform: translateY(-50%);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
