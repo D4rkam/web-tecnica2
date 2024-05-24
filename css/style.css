@@ -112,6 +112,25 @@ body{
   position: relative;
   z-index: 1;
 }
+
+
+.carousel-caption{
+  margin-left: -15%;
+  margin-bottom: -1.5%;
+  height: 100%;
+  width: 100%;
+  color: red;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*Carousel*/
+.img-carousel{
+  height: 85vh;
+  width: 99vw;
+  padding: 0%;
+  margin: 0%;
+}
+
 .principal-img::before {
   content: ""; /* Obligatorio para que el pseudo-elemento sea visible */
   position: absolute; /* Para superponer el pseudo-elemento al fondo */
